@@ -1,1 +1,110 @@
-Welcome to KenwardReid.com
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handyman Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .main {
+            padding: 20px;
+            text-align: center;
+        }
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .service {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            width: calc(33.333% - 40px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .service h2 {
+            margin-top: 0;
+        }
+        .contact {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .contact h2 {
+            margin-top: 0;
+        }
+        .contact p {
+            margin: 10px 0;
+        }
+        .contact a {
+            color: #f4f4f4;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .service {
+                width: calc(50% - 40px);
+            }
+        }
+        @media (max-width: 480px) {
+            .service {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Reliable Handyman Services</h1>
+        <p>Quality Workmanship at Affordable Prices</p>
+    </div>
+
+    <div class="main">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service">
+                <h2>Plumbing</h2>
+                <p>Expert plumbing repairs and installations.</p>
+            </div>
+            <div class="service">
+                <h2>Electrical</h2>
+                <p>Safe and efficient electrical work for your home or office.</p>
+            </div>
+            <div class="service">
+                <h2>Carpentry</h2>
+                <p>Custom carpentry work to enhance your space.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p>Ready to get started on your project? Reach out to us today!</p>
+        <p>Email: <a href="mailto:info@handyman.com">info@handyman.com</a></p>
+        <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+        <p>Address: 123 Handyman St, Fixit City, FC 12345</p>
+    </div>
+</body>
+</html>
