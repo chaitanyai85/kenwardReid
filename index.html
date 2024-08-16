@@ -3,126 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kenward Reid Handyman Services</title>
+    <title>Handyman and Remodeling Expert</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            color: #333;
-            background-color: #f4f4f4;
+            box-sizing: border-box;
         }
-        .header {
-            background: #333;
-            color: #fff;
-            padding: 20px 0;
+        header {
+            background-color: #4CAF50;
+            color: white;
             text-align: center;
+            padding: 1em 0;
         }
-        .header h1 {
-            margin: 0;
-        }
-        .main {
-            padding: 20px;
-            text-align: center;
-        }
-        .services {
+        nav {
             display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin: 20px 0;
+            justify-content: center;
+            background-color: #333;
         }
-        .service {
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 20px;
-            margin: 10px;
-            width: calc(33.333% - 40px);
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .service h2 {
-            margin-top: 0;
-        }
-        .contact {
-            background: #333;
-            color: #fff;
-            padding: 20px;
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
             text-align: center;
         }
-        .contact h2 {
-            margin-top: 0;
+        nav a:hover {
+            background-color: #575757;
         }
-        .contact p {
-            margin: 10px 0;
+        .container {
+            padding: 20px;
         }
-        .contact a {
-            color: #f4f4f4;
-            text-decoration: none;
-            font-weight: bold;
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
         }
-        .contact a:hover {
-            text-decoration: underline;
+        .gallery-item {
+            width: 48%;
+            margin-bottom: 20px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
         }
         .reviews {
-            padding: 20px;
             text-align: center;
-            background: #fff;
-            margin: 20px 0;
+            margin-top: 40px;
         }
-        .reviews h2 {
-            margin-top: 0;
+        .contact {
+            margin-top: 40px;
         }
-        @media (max-width: 768px) {
-            .service {
-                width: calc(50% - 40px);
-            }
+        form {
+            display: flex;
+            flex-direction: column;
         }
-        @media (max-width: 480px) {
-            .service {
-                width: 100%;
-            }
+        form input, form textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        form button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Reliable Handyman Services</h1>
-        <p>Quality Workmanship at Affordable Prices</p>
-    </div>
-
-    <div class="main">
-        <h2>Our Services</h2>
-        <div class="services">
-            <div class="service">
-                <h2>Plumbing</h2>
-                <p>Expert plumbing repairs and installations.</p>
+    <header>
+        <h1>Welcome to My Handyman and Remodeling Services</h1>
+    </header>
+    <nav>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="portfolio">
+            <h2>My Work</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <h3>Project 1</h3>
+                    <img src="before1.jpg" alt="Before Project 1">
+                    <img src="after1.jpg" alt="After Project 1">
+                </div>
+                <div class="gallery-item">
+                    <h3>Project 2</h3>
+                    <img src="before2.jpg" alt="Before Project 2">
+                    <img src="after2.jpg" alt="After Project 2">
+                </div>
+                <!-- Add more projects as needed -->
             </div>
-            <div class="service">
-                <h2>Electrical</h2>
-                <p>Safe and efficient electrical work for your home or office.</p>
-            </div>
-            <div class="service">
-                <h2>Carpentry</h2>
-                <p>Custom carpentry work to enhance your space.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="reviews">
-        <h2>What Our Customers Are Saying</h2>
-        <!-- Replace this code with the actual widget code provided by the service -->
-        <div id="google-reviews-widget">
-            <!-- Example iframe for illustration purposes -->
-            <iframe src="https://your-review-widget-url.com" style="border:0; width:100%; height:400px;" frameborder="0"></iframe>
-        </div>
-    </div>
-
-    <div class="contact">
-        <h2>Contact Us</h2>
-        <p>Ready to get started on your project? Reach out to us today!</p>
-        <p>Email: <a href="mailto:info@handyman.com">info@handyman.com</a></p>
-        <p>Phone: <a href="tel:+18166458036">+1 (816) 645-8036</a></p>
-        <p>Address:Kansas City, KS</p>
+        </section>
+        <section id="reviews" class="reviews">
+            <h2>Customer Reviews</h2>
+            <a href="https://www.google.com/search?q=your+business+name+reviews" target="_blank">Read my Google Reviews</a>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
     </div>
 </body>
 </html>
