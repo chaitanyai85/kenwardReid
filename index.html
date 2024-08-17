@@ -4,15 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kenward Reid - Handyman Services</title>
+    <title>Kenward Reid - Expert Remodeling & Handyman Services</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
             background: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
-            color: #333;
+            font-family: Arial, sans-serif;
         }
 
         .header-img {
@@ -21,12 +19,10 @@
             object-fit: cover;
             border-radius: 50%;
             border: 5px solid #fff;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
 
         .container-custom {
             max-width: 900px;
-            margin: 0 auto;
         }
 
         .header {
@@ -34,7 +30,7 @@
             color: white;
             background-size: cover;
             background-position: center;
-            background-attachment: fixed;
+            padding: 60px 0;
         }
 
         .header-overlay {
@@ -43,7 +39,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.6);
+            background-color: rgba(0, 0, 0, 0.5);
             z-index: 1;
         }
 
@@ -52,88 +48,68 @@
             z-index: 2;
         }
 
-        .header h1 {
-            font-weight: 600;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-
         .contact-info {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-bottom: 20px;
         }
 
-        .contact-info p {
-            margin: 0;
+        .hero-section {
+            padding: 100px 0;
+            text-align: center;
+            background: #007bff;
+            color: white;
         }
 
-        .btn-outline-light {
-            border-color: #fff;
-            color: #fff;
-            transition: all 0.3s ease-in-out;
+        .services-section h2,
+        .portfolio-section h2,
+        .projects-section h2,
+        .reviews-section h2,
+        .contact-section h2 {
+            margin-bottom: 30px;
+            font-weight: bold;
         }
 
-        .btn-outline-light:hover {
-            background-color: #fff;
-            color: #333;
-        }
-
-        .carousel-item img {
+        .services-section .service-card {
+            background: #fff;
             border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 30px;
         }
 
-        section {
+        .portfolio-section,
+        .projects-section,
+        .reviews-section {
+            background-color: #f7f7f7;
             padding: 60px 0;
         }
 
-        section h2 {
-            font-weight: 600;
-            letter-spacing: 1px;
-            margin-bottom: 30px;
-            color: #555;
-        }
-
-        .card {
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        .reviews-section .carousel-item .card {
             border: none;
-            border-radius: 10px;
+            background: transparent;
         }
 
-        .card:hover {
-            transform: translateY(-10px);
-            transition: all 0.3s ease-in-out;
-        }
-
-        .card-body {
-            background-color: #fff;
+        .reviews-section .card-body {
+            background: #fff;
             border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             padding: 20px;
         }
 
-        .card-subtitle {
-            font-weight: 600;
-            color: #555;
-        }
-
-        .rating i {
-            color: #ffc107;
-        }
-
-        footer {
-            background-color: #333;
-        }
-
-        footer p,
-        footer a {
+        .footer-contact p {
             margin: 0;
-            color: #ccc;
         }
 
-        .footer-contact {
-            margin-top: 10px;
+        .footer-section {
+            background-color: #343a40;
+            color: white;
+            padding: 40px 0;
+        }
+
+        .footer-section .container-custom {
+            display: flex;
+            justify-content: space-between;
         }
     </style>
 </head>
@@ -143,13 +119,13 @@
     <!-- Header Section -->
     <header class="header py-5" style="background-image: url('background.jpg');">
         <div class="header-overlay"></div>
-        <div class="container text-center header-content container-custom">
+        <div class="container text-center header-content">
             <img src="Handyman.jpg" alt="Handyman" class="header-img mb-3">
             <h1>Kenward Reid</h1>
             <p class="lead">Expert Remodeling & Home Repair</p>
             <div class="contact-info">
-                <p><strong>Email:</strong> Kenward.reid@gmail.com</p>
-                <p><strong>Phone:</strong> +1 (816) 645-8036</p>
+                <p><strong>Email:</strong> <a href="mailto:Kenward.reid@gmail.com">Kenward.reid@gmail.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+18166458036">+1 (816) 645-8036</a></p>
             </div>
             <nav class="mt-3">
                 <a href="#portfolio" class="btn btn-outline-light me-2">Portfolio</a>
@@ -159,29 +135,89 @@
         </div>
     </header>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="py-5">
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h2>Transforming Your Home, One Project at a Time</h2>
+            <p>From complete renovations to small repairs, Kenward Reid is your trusted partner in home improvement.</p>
+            <a href="#contact" class="btn btn-light btn-lg mt-3">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section py-5">
         <div class="container container-custom">
-            <h2 class="text-center mb-4">My Portfolio</h2>
+            <h2 class="text-center">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <h3>Kitchen Remodeling</h3>
+                        <p>We offer complete kitchen makeovers that bring your culinary dreams to life.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <h3>Bathroom Renovations</h3>
+                        <p>Transform your bathroom into a luxurious spa-like retreat with our expert services.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <h3>Custom Carpentry</h3>
+                        <p>Bespoke carpentry services to create unique and functional pieces for your home.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section py-5">
+        <div class="container container-custom">
+            <h2 class="text-center">My Portfolio</h2>
             <p class="text-center mb-4">At Kenward Reid, we specialize in a wide range of projects including home renovations, kitchen and bathroom remodeling, and custom carpentry. Our team is known for its efficiency, attention to detail, and superior workmanship. We take pride in delivering high-quality results that exceed our clients' expectations, all while completing projects on time and within budget.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="portfolio1.jpg" class="img-fluid" alt="Portfolio Image 1">
+                    <p class="text-center mt-2">Kitchen Renovation - Before & After</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="portfolio2.jpg" class="img-fluid" alt="Portfolio Image 2">
+                    <p class="text-center mt-2">Bathroom Transformation</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-5 bg-light">
+    <section id="projects" class="projects-section py-5 bg-light">
         <div class="container container-custom">
-            <h2 class="text-center mb-4">Recent Projects</h2>
+            <h2 class="text-center">Recent Projects</h2>
             <div id="carouselProjects" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="project1.jpg" class="d-block w-100" alt="Project 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Living Room Renovation</h5>
+                            <p>A complete transformation of an outdated living room into a modern, cozy space.</p>
+                        </div>
                     </div>
                     <div class="carousel-item">
                         <img src="project2.jpg" class="d-block w-100" alt="Project 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Outdoor Deck</h5>
+                            <p>Custom-built outdoor deck perfect for summer barbecues and family gatherings.</p>
+                        </div>
                     </div>
                     <div class="carousel-item">
                         <img src="project3.jpg" class="d-block w-100" alt="Project 3">
-                    </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Home Office Setup</h5>
+                            <p>A functional and stylish home office setup tailored for productivity.</p>
+                        </div>
+                   
+
+ </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjects" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -196,7 +232,7 @@
     </section>
 
     <!-- Reviews Section -->
-    <section id="reviews" class="py-5">
+    <section id="reviews" class="reviews-section py-5">
         <div class="container container-custom">
             <h2 class="text-center mb-4">Customer Reviews</h2>
             <div id="carouselReviews" class="carousel slide" data-bs-ride="carousel">
@@ -204,50 +240,48 @@
                     <!-- Review Item -->
                     <div class="carousel-item active">
                         <div class="card">
-                            <div class="card-body">
+                            <div class="card-body text-center">
                                 <p class="card-text">"Kenward Reid did a fantastic job! The renovation exceeded our expectations."</p>
-                                <div class="rating">
+                                <h6 class="card-subtitle text-muted">- John Doe</h6>
+                                <div class="star-rating mt-2">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star-half-alt"></i>
                                 </div>
-                                <h6 class="card-subtitle mt-2">- John Doe</h6>
                             </div>
                         </div>
                     </div>
                     <!-- Review Item -->
                     <div class="carousel-item">
                         <div class="card">
-                            <div class="card-body">
+                            <div class="card-body text-center">
                                 <p class="card-text">"Highly professional and efficient. Our kitchen looks amazing thanks to Kenward Reid."</p>
-                                <div class="rating">
+                                <h6 class="card-subtitle text-muted">- Jane Smith</h6>
+                                <div class="star-rating mt-2">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                 </div>
-                                <h6 class="card-subtitle mt-2">- Jane Smith</h6>
                             </div>
                         </div>
                     </div>
                     <!-- Review Item -->
                     <div class="carousel-item">
                         <div class="card">
-                            <div class="card-body">
+                            <div class="card-body text-center">
                                 <p class="card-text">"Excellent workmanship and attention to detail. Would highly recommend Kenward Reid."</p>
-                                <div class="rating">
+                                <h6 class="card-subtitle text-muted">- Robert Johnson</h6>
+                                <div class="star-rating mt-2">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star-half-alt"></i>
                                 </div>
-                                <h6
-
- class="card-subtitle mt-2">- Robert Johnson</h6>
                             </div>
                         </div>
                     </div>
@@ -265,14 +299,39 @@
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer class="bg-dark text-white text-center py-4">
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
         <div class="container container-custom">
-            <p class="mb-0">© 2024 Kenward Reid. All rights reserved.</p>
-            <div class="footer-contact mt-3">
-                <p><strong>Email:</strong> Kenward.reid@gmail.com</p>
-                <p><strong>Phone:</strong> +1 (816) 645-8036</p>
-                <p><strong>Address:</strong> 1234 Elm Street, Kansas City, MO 64105</p>
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="container container-custom">
+            <div class="footer-contact">
+                <p><strong>Contact:</strong> <a href="mailto:Kenward.reid@gmail.com">Kenward.reid@gmail.com</a> | <a href="tel:+18166458036">+1 (816) 645-8036</a></p>
+                <p><strong>Address:</strong> 123 Main St, Kansas City, MO 64108</p>
+            </div>
+            <div class="social-media">
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </footer>
