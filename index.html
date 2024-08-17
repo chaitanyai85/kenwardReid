@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            background: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
+            background: #F7FFF7;
             font-family: 'Roboto', sans-serif;
+            color: #1A1A1D;
         }
 
         .header-img {
@@ -29,8 +30,7 @@
         .header {
             position: relative;
             color: white;
-            background-size: cover;
-            background-position: center;
+            background-color: #0D1B2A;
             padding: 60px 0;
         }
 
@@ -58,7 +58,7 @@
         .hero-section {
             padding: 100px 0;
             text-align: center;
-            background: #007bff;
+            background: #FF6B6B;
             color: white;
         }
 
@@ -82,7 +82,7 @@
         .portfolio-section,
         .projects-section,
         .reviews-section {
-            background-color: #f7f7f7;
+            background-color: #F7FFF7;
             padding: 60px 0;
         }
 
@@ -103,7 +103,7 @@
         }
 
         .footer-section {
-            background-color: #343a40;
+            background-color: #0D1B2A;
             color: white;
             padding: 40px 0;
         }
@@ -111,6 +111,18 @@
         .footer-section .container-custom {
             display: flex;
             justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .footer-contact,
+        .social-media {
+            margin-bottom: 20px;
+        }
+
+        .social-media a {
+            color: #4ECDC4;
+            margin-right: 15px;
         }
     </style>
 </head>
@@ -118,15 +130,15 @@
 <body>
 
     <!-- Header Section -->
-    <header class="header py-5" style="background-image: url('background.jpg');">
+    <header class="header py-5">
         <div class="header-overlay"></div>
         <div class="container text-center header-content">
             <img src="Handyman.jpg" alt="Handyman" class="header-img mb-3">
             <h1>Kenward Reid</h1>
             <p class="lead">Expert Remodeling & Home Repair</p>
             <div class="contact-info">
-                <p><strong>Email:</strong> <a href="mailto:Kenward.reid@gmail.com">Kenward.reid@gmail.com</a></p>
-                <p><strong>Phone:</strong> <a href="tel:+18166458036">+1 (816) 645-8036</a></p>
+                <p><strong>Email:</strong> <a href="mailto:Kenward.reid@gmail.com" class="text-white">Kenward.reid@gmail.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+18166458036" class="text-white">+1 (816) 645-8036</a></p>
             </div>
             <nav class="mt-3">
                 <a href="#portfolio" class="btn btn-outline-light me-2">Portfolio</a>
@@ -179,11 +191,11 @@
             <p class="text-center mb-4">At Kenward Reid, we specialize in a wide range of projects including home renovations, kitchen and bathroom remodeling, and custom carpentry. Our team is known for its efficiency, attention to detail, and superior workmanship. We take pride in delivering high-quality results that exceed our clients' expectations, all while completing projects on time and within budget.</p>
             <div class="row">
                 <div class="col-md-6">
-                    <img src="project1.jpg" class="img-fluid" alt="Portfolio Image 1">
+                    <img src="portfolio1.jpg" class="img-fluid" alt="Portfolio Image 1">
                     <p class="text-center mt-2">Kitchen Renovation - Before & After</p>
                 </div>
                 <div class="col-md-6">
-                    <img src="project2.jpg" class="img-fluid" alt="Portfolio Image 2">
+                    <img src="portfolio2.jpg" class="img-fluid" alt="Portfolio Image 2">
                     <p class="text-center mt-2">Bathroom Transformation</p>
                 </div>
             </div>
