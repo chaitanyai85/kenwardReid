@@ -156,7 +156,7 @@
         .navbar-toggler-icon {
             background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba(255, 255, 255, 1)" stroke-width="2" d="M5 7h20M5 15h20M5 23h20"/%3E%3C/svg%3E');
         }
-
+        
         .before-after-card {
             background: white;
             border-radius: 10px;
@@ -186,20 +186,20 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: opacity 0.5s ease;
         }
         
-        .before-after-slider img.after-image {
-            opacity: 0;
+        button.btn-secondary {
+            background-color: #6c757d;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
         }
         
-        .before-after-slider:hover img.after-image {
-            opacity: 1;
+        button.btn-secondary:hover {
+            background-color: #5a6268;
         }
-        
-        .before-after-slider:hover img.before-image {
-            opacity: 0;
-        }
+
     </style>
 </head>
 
@@ -303,32 +303,35 @@
         </div>
     </section>
 
-    <!-- Before and After Section -->
-    <section class="before-after py-5 bg-light" id="before-after">
-        <div class="container">
-            <h2 class="section-title">Before & After Transformations</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="before-after-card">
-                        <h3>Project 1: PainT Upgrade</h3>
-                        <div class="before-after-slider">
-                            <img src="before1.JPEG" alt="Before - Kitchen" class="img-fluid before-image">
-                            <img src="after1.JPEG" alt="After - Kitchen" class="img-fluid after-image">
-                        </div>
+   <!-- Before and After Section -->
+<section class="before-after py-5 bg-light" id="before-after">
+    <div class="container">
+        <h2 class="section-title">Before & After Transformations</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="before-after-card">
+                    <h3>Project 1: Paint</h3>
+                    <div class="before-after-slider" id="slider1">
+                        <img src="before1.JPEG" alt="Before - Kitchen" class="img-fluid before-image">
+                        <img src="after1.JPEG" alt="After - Kitchen" class="img-fluid after-image" style="display:none;">
                     </div>
+                    <button class="btn btn-secondary mt-3" onclick="toggleImage('slider1')">Toggle Before/After</button>
                 </div>
-                <div class="col-md-6">
-                    <div class="before-after-card">
-                        <h3>Project 2: Paint Upgrade</h3>
-                        <div class="before-after-slider">
-                            <img src="before2.JPEG" alt="Before - Bathroom" class="img-fluid before-image">
-                            <img src="after2.JPEG" alt="After - Bathroom" class="img-fluid after-image">
-                        </div>
+            </div>
+            <div class="col-md-6">
+                <div class="before-after-card">
+                    <h3>Project 2: Paint</h3>
+                    <div class="before-after-slider" id="slider2">
+                        <img src="before2.JPEG" alt="Before - Bathroom" class="img-fluid before-image">
+                        <img src="after2.JPEG" alt="After - Bathroom" class="img-fluid after-image" style="display:none;">
                     </div>
+                    <button class="btn btn-secondary mt-3" onclick="toggleImage('slider2')">Toggle Before/After</button>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio py-5 bg-light">
